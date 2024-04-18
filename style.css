@@ -32,6 +32,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  background-color: #bebfc2;
 }
 
 nav {
@@ -193,6 +194,7 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  width: 42vw;
 }
 
 .title {
