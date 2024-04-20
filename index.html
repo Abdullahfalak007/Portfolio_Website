@@ -14,6 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -30,6 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -37,10 +39,10 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container slideInLeft">
         <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text slideInRight">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Muhammad Abdullah</h1>
         <p class="section__text__p2">
@@ -62,31 +64,31 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abdullahfalak007'"
+            onclick="window.open('https://www.linkedin.com/in/abdullahfalak007', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Abdullahfalak007'"
+            onclick="window.open('https://github.com/Abdullahfalak007', '_blank')"
           />
           <img
             src="./assets/youtube.png"
             alt="My Youtube channel"
             class="icon"
-            onclick="location.href='https://www.youtube.com/c/FalakTechrary'"
+            onclick="window.open('https://www.youtube.com/c/FalakTechrary', '_blank')"
           />
           <img
             src="./assets/facebook.png"
             alt="My Facebook profile"
             class="icon"
-            onclick="location.href='https://www.facebook.com/abdullahfalak007'"
+            onclick="window.open('https://www.facebook.com/abdullahfalak007', '_blank')"
           />
           <img
             src="./assets/instagram.png"
-            alt="My instagram ID"
+            alt="My Instagram ID"
             class="icon"
-            onclick="location.href='https://www.instagram.com/Abdullahfalak007/'"
+            onclick="window.open('https://www.instagram.com/Abdullahfalak007/', '_blank')"
           />
         </div>
       </div>
@@ -152,9 +154,9 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -167,7 +169,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>HTML5</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -178,7 +180,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>CSS3</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -189,8 +191,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>JavaScript (ES6+)</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -200,8 +202,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>React.js</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -212,7 +214,7 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -222,14 +224,27 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">
+              Backend Development & Other Technologies
+            </h2>
             <div class="article-container">
               <article>
                 <img
@@ -238,8 +253,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Node.js</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -249,8 +264,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Express.js</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -260,8 +275,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>MongoDB</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -272,7 +287,51 @@
                 />
                 <div>
                   <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
                   <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Selenium</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Beautiful Soup</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>App Script</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
@@ -286,6 +345,95 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              Full Stack Developer
+            </h2>
+            <h3>Freelance</h3>
+            <h4 class="date-duration">03/2024 - Present</h4>
+            <div class="article-container">
+              <ul>
+                <li>
+                  Employed HTML5, CSS3, and Bootstrap for responsive design.
+                </li>
+                <li>
+                  Enhanced site interactivity and performance using
+                  JavaScript/TypeScript.
+                </li>
+                <li>Leveraged MySQL for robust database management.</li>
+                <li>Integrated Kendo UI to improve the user interface.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              Web Scraping Specialist
+            </h2>
+            <h3>Fiverr</h3>
+            <h4 class="date-duration">08/2023 - Present</h4>
+            <div class="article-container">
+              <ul>
+                <li>
+                  Developed custom automation scripts to improve operational
+                  efficiencies.
+                </li>
+                <li>
+                  Utilized Python, Selenium, BeautifulSoup, Pywinauto, and
+                  Requests for various tasks.
+                </li>
+                <li>
+                  Designed automation frameworks to streamline tasks and
+                  minimize errors.
+                </li>
+                <li>
+                  Created web scraping tools to extract and process large
+                  datasets.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              Intern, Software Engineer
+            </h2>
+            <h3>AmazeWorks Pvt. Ltd.</h3>
+            <h4 class="date-duration">05/2022 - 08/2022</h4>
+            <div class="article-container">
+              <ul>
+                <li>
+                  Participated in the development of Belgium's premier ERP
+                  software, Odoo.
+                </li>
+                <li>
+                  Customized frontend components to improve UX and
+                  functionality.
+                </li>
+                <li>
+                  Employed Python and XML extensively for UI design and
+                  implementation.
+                </li>
+                <li>
+                  Contributed to the integration of new modules and features.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -294,48 +442,18 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/project-1.jpg"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Gmail Automation</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/Abdullahfalak007/Email-extraction-script-from-the-body-of-an-email-message-using-python', '_blank')"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -347,11 +465,57 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">
+              Nordic Rose (Webpage)
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Abdullahfalak007/Nordic-Rose.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Lead tracker (Extension)
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Abdullahfalak007/Lead-Tracker-App.git', '_blank')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stripe (Webpage)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Abdullahfalak007/Task-08.git', '_blank')"
               >
                 Github
               </button>
@@ -405,6 +569,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>

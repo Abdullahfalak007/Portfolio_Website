@@ -2,6 +2,82 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from top */
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Common animation properties */
+.animated {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+}
+
+.visible {
+  opacity: 1;
+  animation-name: slideInRight; /* Default animation */
+}
+
+.visible.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+.visible.slideInRight {
+  animation-name: slideInRight;
+}
+
+.visible.slideInTop {
+  animation-name: slideInTop;
+}
+
+.visible.slideInBottom {
+  animation-name: slideInBottom;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -336,6 +412,11 @@ section {
   flex-direction: column;
 }
 
+.article-container ul {
+  margin-top: 10vh;
+  list-style-type: disc;
+}
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -356,10 +437,16 @@ article .icon {
   cursor: default;
 }
 
+#experience {
+  position: relative;
+  margin-top: 15vh;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
+  margin-top: 20vh;
 }
 
 .color-container {
